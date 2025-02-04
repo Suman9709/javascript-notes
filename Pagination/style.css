@@ -23,7 +23,6 @@
     padding: 10px 40px;
     border-radius: 6px;
 }
-
 ul {
     margin: 20px 30px;
 }
@@ -56,4 +55,61 @@ ul li.active{
     outline: none;
     border: none;
     cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pagination {
+        padding: 8px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    ul li {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .btn1, .btn2 {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pagination {
+        padding: 5px 20px;
+    }
+
+    ul {
+        gap: 5px;
+    }
+
+    ul li {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .btn1, .btn2 {
+        font-size: 16px;
+        padding: 5px;
+    }
 }
