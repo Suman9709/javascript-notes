@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.img1 {
+    width: 65vw;
+    height: 55vh;
+    object-fit: cover;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.img-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: gray;
+}
+
+.img-row img {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
