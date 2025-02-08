@@ -1,10 +1,10 @@
-function a(){
+function a() {
     var b = 10;
     c();
 
-    function c(){
+    function c() {
         console.log(b); // gives b=10
-    }   
+    }
 }
 
 
@@ -23,3 +23,14 @@ Lexical:- means hierarchy or sequence from the above example c() is lexically in
 
 // The scope chain is th lexical environment and the parent references 
 
+
+const person = {
+    name: "XYZ",
+    greet: function () {
+        const arrow = () => {
+            console.log(this.name);
+        }
+        arrow()
+    }
+}
+person.greet();
