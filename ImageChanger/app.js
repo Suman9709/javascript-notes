@@ -13,3 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+// To test a function and get back its return
+// function printElapsedTime(testFn) {
+//     const startTime = Date.now();
+//     const result = testFn();
+//     const endTime = Date.now();
+  
+//     console.log(`Elapsed time: ${String(endTime - startTime)} milliseconds`);
+//     return result;
+//   }
+  
+//   const yourFunctionReturn = printElapsedTime(yourFunction);
+  
